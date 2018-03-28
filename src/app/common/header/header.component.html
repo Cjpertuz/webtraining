@@ -1,0 +1,37 @@
+<header class="b-header">
+
+  <!--[if lt IE 7]>
+  <p class="browsehappy">Nos está visitando con un <strong>navegador antiguo</strong>. Para disfrutar este
+    sitio que hemos preparado para ti, por favor descarga un navegador más nuevo y mejor <a
+      href="http://browsehappy.com/">aquí</a>, gracias.</p>
+  <![endif]-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a
+          *ngIf="_authService.isLoggedIn()"
+          class="nav-link"
+          href="#"
+          routerlink="/proyectos">Proyectos <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a
+          *ngIf="_authService.isLoggedIn()"
+          class="nav-link"
+          href="#"
+          routerlink="/issues">Issues</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Salir</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
