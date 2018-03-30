@@ -16,7 +16,7 @@ export class AuthenticationService {
   public isLoggedIn() {
     // this._locker.clear();
     const user = this._locker.retrieve('user');
-    console.log(user);
+    console.log('Valor User', user);
     if (!!user) {
       this.user = user;
       this.hasSession = true;

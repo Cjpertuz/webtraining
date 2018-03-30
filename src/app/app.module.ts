@@ -20,6 +20,7 @@ import { HttpService } from './common/services/http.service';
 import { AuthGuard } from './common/guards/auth.guard';
 import { PublicGuard } from './common/guards/public.guard';
 import { NotFoundComponent } from './common/not-found/not-found.component';
+import { SortingComponent } from './common/sorting/sorting.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NotFoundComponent } from './common/not-found/not-found.component';
     LoaderComponent,
     LoginComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SortingComponent
   ],
   imports: [
     BrowserModule,
